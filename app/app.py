@@ -52,8 +52,6 @@ def meteorite_counts(min_year, max_year):
     # Return the data as a JSON response
     return jsonify(data)
 
-
-
 @app.route("/api/v1.0/data/<int:min_year>/<int:max_year>")  # Ensures min_year is an integer
 # you have to type "/api/v1.0/data/2000" to get the json data
 def data(min_year, max_year):
@@ -72,7 +70,6 @@ def sunburst_data(min_year, max_year):
     results = sql_helper.sunburst_data(min_year, max_year)
     data = results.to_dict(orient="records")
     return jsonify(data)
-
 
 if __name__ == "__main__":
     app.run(debug=True, port = 8000)

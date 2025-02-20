@@ -1,0 +1,17 @@
+#map {
+  height: 800px;
+}
+
+/* Centering sunburst chart*/
+
+#plot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;/* Adjust the height as needed */
+  width: 100%;
+}
+
+#sunburst-chart {
+  max-width: 100%; /* Ensure the chart scales properly */
+}

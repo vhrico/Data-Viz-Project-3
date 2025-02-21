@@ -75,12 +75,12 @@
         </div>
       </div>
       <div class="row">
-  <!-- Table Section -->
-    <h3 class="text-xl font-bold mb-2">Data Table</h3>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-
+  <!-- Table and Sunburst Chart Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Table Section -->
+      <div class="col-md-6">
+        <h3 class="text-xl font-bold mb-2">Data Table</h3>
         <table id="meteorites" class="table table-striped table-hover">
           <thead>
             <tr>
@@ -95,20 +95,22 @@
           </tbody>
         </table>
       </div>
-<br><br>
-  <!-- Sunburst Chart Section -->
-    <h3 class="text-xl font-bold mb-2">Sunburst Chart</h3>
-    <div id="plot" class="col-md-6">
-              
-    <svg id="sunburst-chart" width="600" height="400"></svg>    
-</div>
 
-    <!-- Bar Chart Section -->
-    <h3 class="text-xl font-bold mb-2">Bar Chart</h3>
-    <div id="plot2" class="col-mb-6">
-    
+      <!-- Sunburst Chart Section -->
+      <div class="col-md-6">
+        <h3 class="text-xl font-bold mb-2">Sunburst Chart</h3>
+        <div id="plot">
+          <svg id="sunburst-chart" width="600" height="400"></svg>    
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bar Chart Section -->
+  <h3 class="text-xl font-bold mb-2">Bar Chart</h3>
+  <div id="plot2" class="col-mb-6">
     <svg id="bar-chart" width="600" height="400"></svg>
-</div>
+  </div>
   
 
   <script src="static/js/app.js"></script>

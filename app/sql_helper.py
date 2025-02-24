@@ -81,7 +81,7 @@ class SQLHelper:
                 )
                 GROUP BY rec_class_group, Year
             )
-            SELECT rec_class_group AS label, count, Year AS parent, concat(rec_class_group, "_", Year) as id
+            SELECT rec_class_group AS label, count, Year AS parent, rec_class_group || "_" || Year as id
             FROM TopClasses
             ORDER BY Year, count DESC;
         """)
